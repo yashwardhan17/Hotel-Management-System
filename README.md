@@ -1,86 +1,77 @@
-# 🏨 Hotel Management System
+# 🏨 Hotel Management System (Java Console App)
 
-A simple **Hotel Management System** developed using **Java** and **Swing (Javax GUI)**.  
-This desktop application helps manage hotel operations such as booking rooms, managing customers, employees, room services, and billing.
+A **console-based Hotel Management System** developed in **Java**. This simple project simulates core hotel operations such as room check-in, check-out, and displaying available rooms.
 
 ---
 
-## 💡 Features
+## 📌 Features
 
-- 🛏️ Room Booking & Management  
-- 👥 Customer Information Management  
-- 🧹 Housekeeping Service Tracking  
-- 🍽️ Restaurant / Room Service Billing  
-- 🧑‍💼 Employee Management  
-- 💰 Integrated Billing System  
-- 📊 Clean GUI with responsive forms and buttons  
-- 🧾 Receipt/Invoice Generation
+- 🛏️ Room creation and tracking
+- ✔️ Guest check-in
+- ❌ Guest check-out
+- 📋 View available rooms
+- 🔄 Continuous menu-driven interaction
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Language:** Java  
-- **GUI:** Swing (Javax)  
-- **IDE:** IntelliJ IDEA / Eclipse  
-- **Database:** *Currently not connected* (future scope: MySQL/SQLite)  
-- **Architecture:** OOP-based modular design
+- **Language:** Java
+- **Compiler/IDE:** Any (e.g. IntelliJ IDEA, Eclipse, VS Code)
+- **Interface:** Command-line / Console
 
 ---
 
+## 📁 Project Structure
 
----
+```bash
+HotelManagementSystem.java  # Contains all classes in a single file
+```
 
-## 🚀 How to Run
+## ▶️ How to Run
+Clone or download the repository:
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yashwardhan17/Hotel-Management-System.git
-    ```
-2. Open the project in your preferred Java IDE (like IntelliJ or Eclipse).
-3. Run the `Login.java` file to launch the application.
-4. Use the dashboard to explore all features.
+```bash
+Copy
+Edit
+git clone https://github.com/yashwardhan17/Hotel-Management-System.git
+Compile the Java file:
+```
 
-> ✅ Note: Make sure Java JDK is installed and properly configured in your system.
+```bash
+javac HotelManagementSystem.java
+```
 
----
+## Run the program:
 
-## 🖼️ Screenshots
+```
+bash
+java HotelManagementSystem
+```
+Follow the on-screen menu to interact with the system.
 
-| Login Page | Dashboard |
-|------------|-----------|
-| ![Login](https://github.com/yashwardhan17/Hotel-Management-System/assets/1234567890/login.png) | ![Dashboard](https://github.com/yashwardhan17/Hotel-Management-System/assets/1234567890/dashboard.png) |
+## 💡 Sample Menu
+```pgsql
+--- Hotel Management System ---
+1. Check-in
+2. Check-out
+3. View available rooms
+4. Exit
+```
+## 🧠 How It Works
+### Room class: Represents an individual hotel room with number, occupancy status, and guest name.
 
-_(Replace the links with actual screenshots or GitHub-hosted image links)_
+### Hotel class: Contains an array of rooms and manages check-in, check-out, and availability display.
 
----
+### HotelManagementSystem: Contains the main method and handles user input and menu logic.
 
-## 🔮 Future Enhancements
+## 🚀 Future Improvements
+Add a GUI using JavaFX or Swing
 
-- Database integration (MySQL / SQLite)
-- Admin authentication
-- Exporting billing details as PDF
-- Real-time room availability tracking
-- Customer feedback module
+Store guest/room data in a database (e.g., MySQL, SQLite)
 
----
+Add more room types (AC, Deluxe, Suite)
 
-## 👨‍💻 Author
-
-**Yashwardhan**  
-📧 yashwardhan17@gmail.com  
-🔗 [GitHub Profile](https://github.com/yashwardhan17)
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## ⭐️ Give a Star
-
-If you liked this project, give it a ⭐️ to show support!
+Generate PDF receipts for guests
 
 
